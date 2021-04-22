@@ -29,18 +29,32 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func Login(_ sender: Any) {
-        guard let nextVC1=self.storyboard?.instantiateViewController(identifier: "CheckViewController")as? CheckViewController else {return}
         
+        if ID.text?.isEmpty==false && PW.text?.isEmpty==false{
+        guard let nextVC1=self.storyboard?.instantiateViewController(identifier: "Home1ViewController")as? UITabBarController else {return}
+        
+        //nextVC1.message=ID.text
         self.present(nextVC1, animated: true, completion: nil)
+        }
+        
         
     }
+
     @IBAction func create(_ sender: Any) {
         guard let nextVC2=self.storyboard?.instantiateViewController(identifier: "RegisterViewController")as? RegisterViewController else {return}
+        
         
         self.navigationController?.pushViewController(nextVC2, animated: true)
         
         
+        
     }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+
+         self.view.endEditing(true)
+
+   }
     
     /*
     // MARK: - Navigation

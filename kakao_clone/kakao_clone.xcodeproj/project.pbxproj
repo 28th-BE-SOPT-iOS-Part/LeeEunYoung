@@ -21,6 +21,8 @@
 		712622D226307AF3004B2175 /* Three.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712622D126307AF3004B2175 /* Three.storyboard */; };
 		712622D526307B06004B2175 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712622D426307B06004B2175 /* Shopping.storyboard */; };
 		712622D826307B15004B2175 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712622D726307B15004B2175 /* Setting.storyboard */; };
+		717642F82631660900358DBF /* Home1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717642F72631660900358DBF /* Home1ViewController.swift */; };
+		717642FB2631662200358DBF /* Home2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717642FA2631662200358DBF /* Home2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		712622D126307AF3004B2175 /* Three.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Three.storyboard; sourceTree = "<group>"; };
 		712622D426307B06004B2175 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
 		712622D726307B15004B2175 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		717642F72631660900358DBF /* Home1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home1ViewController.swift; sourceTree = "<group>"; };
+		717642FA2631662200358DBF /* Home2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				712622AD263063D4004B2175 /* ViewController.swift */,
 				712622AF263063D4004B2175 /* Main.storyboard */,
 				712622CB26307A0E004B2175 /* Home.storyboard */,
+				717642FA2631662200358DBF /* Home2ViewController.swift */,
+				717642F72631660900358DBF /* Home1ViewController.swift */,
 				712622CE26307ACB004B2175 /* chatting.storyboard */,
 				712622D126307AF3004B2175 /* Three.storyboard */,
 				712622D426307B06004B2175 /* Shopping.storyboard */,
@@ -172,6 +178,8 @@
 				712622C5263072BB004B2175 /* CheckViewController.swift in Sources */,
 				712622AA263063D4004B2175 /* AppDelegate.swift in Sources */,
 				712622AC263063D4004B2175 /* SceneDelegate.swift in Sources */,
+				717642FB2631662200358DBF /* Home2ViewController.swift in Sources */,
+				717642F82631660900358DBF /* Home1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

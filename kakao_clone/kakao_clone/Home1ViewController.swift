@@ -1,36 +1,28 @@
 //
-//  CheckViewController.swift
+//  Home1ViewController.swift
 //  kakao_clone
 //
-//  Created by 이은영 on 2021/04/21.
+//  Created by 이은영 on 2021/04/22.
 //
 
 import UIKit
 
-class CheckViewController: UIViewController {
+class Home1ViewController: UIViewController {
 
-    @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var button: UIButton!
-    var message : String?
+    @IBOutlet weak var ProfileButton: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        button.backgroundColor=UIColor.yellow
+
         // Do any additional setup after loading the view.
-        setLabel()
     }
     
 
-    @IBAction func dismiss(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    func setLabel()
-    {
-        if let msg=self.message
-        {
-            messageLabel.text="\(msg)님 \n환영합니다."
-        }
+    @IBAction func back1(_sender:UIImageView){
+        guard let nextVC=self.storyboard?.instantiateViewController(identifier: "Home2ViewController")as? Home2ViewController else {return}
+        
+        self.present(nextVC, animated: true, completion: nil)
+        
     }
     /*
     // MARK: - Navigation
@@ -42,4 +34,5 @@ class CheckViewController: UIViewController {
     }
     */
 
+    
 }
