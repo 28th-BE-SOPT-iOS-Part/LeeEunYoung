@@ -9,7 +9,7 @@ import UIKit
 
 class Home1ViewController: UIViewController {
 
-    @IBOutlet weak var ProfileButton: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +18,11 @@ class Home1ViewController: UIViewController {
     }
     
 
-    @IBAction func back1(_sender:UIImageView){
-        guard let nextVC=self.storyboard?.instantiateViewController(identifier: "Home2ViewController")as? Home2ViewController else {return}
-        
-        self.present(nextVC, animated: true, completion: nil)
-        
+
+    @IBAction func ProfileButton(_ sender: Any) {
+        guard let ProfileVC=self.storyboard?.instantiateViewController(identifier: "Home2ViewController")as? Home2ViewController else {return}
+        ProfileVC.modalPresentationStyle = .fullScreen
+        self.present(ProfileVC, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

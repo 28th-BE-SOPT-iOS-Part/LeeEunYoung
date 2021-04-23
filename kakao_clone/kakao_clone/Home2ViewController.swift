@@ -2,7 +2,7 @@
 //  Home2ViewController.swift
 //  kakao_clone
 //
-//  Created by 이은영 on 2021/04/22.
+//  Created by 이은영 on 2021/04/23.
 //
 
 import UIKit
@@ -15,7 +15,10 @@ class Home2ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func ProfileClose(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

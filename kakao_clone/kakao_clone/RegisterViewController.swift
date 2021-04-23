@@ -24,10 +24,9 @@ class RegisterViewController: UIViewController {
     @IBAction func Create(_ sender: Any) {
         if ID.text?.isEmpty==false && PW.text?.isEmpty==false && PWCheck.text?.isEmpty==false{
             
-        guard let nextVC3=self.storyboard?.instantiateViewController(identifier: "Home1ViewController")as? UITabBarController else {return}
-        
+        guard let nextVC3=self.storyboard?.instantiateViewController(identifier: "TabBar")as? UITabBarController else {return}
+            nextVC3.modalPresentationStyle = .fullScreen
         //nextVC3.message=ID.text
-            
         self.present(nextVC3, animated: true, completion: nil)
             
         }

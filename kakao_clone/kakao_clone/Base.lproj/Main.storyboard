@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmR-ff-DiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1630" y="88"/>
+            <point key="canvasLocation" x="1590" y="131"/>
         </scene>
         <!--Check View Controller-->
         <scene sceneID="rhK-NQ-kmK">
@@ -230,7 +230,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="bkw-jh-QZh">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jRd-TM-ZSO" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" automaticallyAdjustsScrollViewInsets="NO" id="jRd-TM-ZSO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="oBM-Ic-q11"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pl6-KT-Mtc">
@@ -249,7 +249,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbQ-kf-jT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2668" y="140"/>
+            <point key="canvasLocation" x="2538" y="131"/>
         </scene>
         <!--Home-->
         <scene sceneID="Szg-LA-Od9">
@@ -259,7 +259,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWw-83-s9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2669" y="548"/>
+            <point key="canvasLocation" x="2217" y="583"/>
         </scene>
         <!--chatting-->
         <scene sceneID="W7s-pO-93h">
@@ -269,7 +269,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2Y-Qm-M3U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2904" y="583"/>
+            <point key="canvasLocation" x="2425" y="583"/>
         </scene>
         <!--Three-->
         <scene sceneID="JEw-DC-cKE">
@@ -279,7 +279,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gL8-dF-NT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3125" y="594"/>
+            <point key="canvasLocation" x="2691" y="595"/>
         </scene>
         <!--Shopping-->
         <scene sceneID="BpX-bd-ZMc">
@@ -289,7 +289,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdf-yJ-bgH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3336" y="579"/>
+            <point key="canvasLocation" x="2972" y="595"/>
         </scene>
         <!--Setting-->
         <scene sceneID="RqX-oF-IbW">
@@ -299,7 +299,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpB-Mk-p4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3539" y="563"/>
+            <point key="canvasLocation" x="3136" y="573"/>
         </scene>
     </scenes>
     <resources>

@@ -31,8 +31,9 @@ class LoginViewController: UIViewController {
     @IBAction func Login(_ sender: Any) {
         
         if ID.text?.isEmpty==false && PW.text?.isEmpty==false{
-        guard let nextVC1=self.storyboard?.instantiateViewController(identifier: "Home1ViewController")as? UITabBarController else {return}
         
+        guard let nextVC1=self.storyboard?.instantiateViewController(identifier: "TabBar")as? UITabBarController else {return}
+            nextVC1.modalPresentationStyle = .fullScreen
         //nextVC1.message=ID.text
         self.present(nextVC1, animated: true, completion: nil)
         }
