@@ -22,6 +22,7 @@
 		712622D526307B06004B2175 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712622D426307B06004B2175 /* Shopping.storyboard */; };
 		712622D826307B15004B2175 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712622D726307B15004B2175 /* Setting.storyboard */; };
 		715BADEA2632B93E00ED889B /* Home2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715BADE92632B93E00ED889B /* Home2ViewController.swift */; };
+		715BADF42632CC3A00ED889B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715BADF32632CC3A00ED889B /* TabBarViewController.swift */; };
 		717642F82631660900358DBF /* Home1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717642F72631660900358DBF /* Home1ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		712622D426307B06004B2175 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
 		712622D726307B15004B2175 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		715BADE92632B93E00ED889B /* Home2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2ViewController.swift; sourceTree = "<group>"; };
+		715BADF32632CC3A00ED889B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		717642F72631660900358DBF /* Home1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				712622AB263063D4004B2175 /* SceneDelegate.swift */,
 				712622AD263063D4004B2175 /* ViewController.swift */,
 				712622AF263063D4004B2175 /* Main.storyboard */,
+				715BADF32632CC3A00ED889B /* TabBarViewController.swift */,
 				712622CB26307A0E004B2175 /* Home.storyboard */,
 				715BADE92632B93E00ED889B /* Home2ViewController.swift */,
 				717642F72631660900358DBF /* Home1ViewController.swift */,
@@ -176,6 +179,7 @@
 				712622C226306E2A004B2175 /* RegisterViewController.swift in Sources */,
 				712622AE263063D4004B2175 /* ViewController.swift in Sources */,
 				712622C5263072BB004B2175 /* CheckViewController.swift in Sources */,
+				715BADF42632CC3A00ED889B /* TabBarViewController.swift in Sources */,
 				712622AA263063D4004B2175 /* AppDelegate.swift in Sources */,
 				712622AC263063D4004B2175 /* SceneDelegate.swift in Sources */,
 				715BADEA2632B93E00ED889B /* Home2ViewController.swift in Sources */,

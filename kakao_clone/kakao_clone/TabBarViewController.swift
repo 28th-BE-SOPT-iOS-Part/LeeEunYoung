@@ -1,5 +1,5 @@
 //
-//  Home2ViewController.swift
+//  TabBarViewController.swift
 //  kakao_clone
 //
 //  Created by 이은영 on 2021/04/23.
@@ -7,20 +7,19 @@
 
 import UIKit
 
-class Home2ViewController: UIViewController {
+class TabBarViewController: UITabBarController {
 
-    @IBOutlet weak var btn1: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        self.tabBar.tintColor=UIColor.black
+        self.tabBar.unselectedItemTintColor=UIColor(red: 128/255, green: 128/255, blue: 128/255, alpha: 0.5)
+    
+
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func ProfileClose(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 
