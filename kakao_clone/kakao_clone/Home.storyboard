@@ -80,52 +80,11 @@
                                     <constraint firstAttribute="width" constant="97" id="AxS-0X-UwD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="김솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Waa-Jf-Ke5">
-                                <rect key="frame" x="181" y="614" width="47" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXA-cP-55Z">
+                                <rect key="frame" x="190" y="688" width="88.333333333333314" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="47" id="2PX-cr-Rbr"/>
-                                    <constraint firstAttribute="height" constant="21" id="Nqe-H6-vpB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwh-aS-jim">
-                                <rect key="frame" x="122" y="691" width="96" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="FhK-Zp-lyL"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="kjc-0L-9wf"/>
-                                    <constraint firstAttribute="width" constant="96" id="ldg-3f-S4Q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-12"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="-45" maxX="-77" maxY="0.0"/>
-                                <state key="normal" title="프로필 편집" image="profileEditImg">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-Io-e7L">
-                                <rect key="frame" x="18" y="691" width="96" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="6OS-8N-eCc"/>
-                                    <constraint firstAttribute="width" constant="96" id="Wl5-Gc-cp7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-12"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="-45" maxX="-77" maxY="0.0"/>
-                                <state key="normal" title="나와의 채팅" image="profileTalkImg">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXA-cP-55Z">
-                                <rect key="frame" x="212" y="691" width="134" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="3Mh-Ce-lEO"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="Jn9-SP-oQe"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="96" id="eP8-kx-yOz"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="72" id="fLG-ra-I5W"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="si2-0J-T4u"/>
-                                    <constraint firstAttribute="width" constant="96" id="wgb-55-1Ba"/>
+                                    <constraint firstAttribute="height" constant="60" id="WZh-ts-60Q"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="sYL-A4-x91"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-12"/>
@@ -134,29 +93,58 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-Io-e7L">
+                                <rect key="frame" x="30" y="688" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="VeI-Fi-uD3"/>
+                                    <constraint firstAttribute="height" constant="60" id="r5v-7j-Nmy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-45" maxX="-77" maxY="0.0"/>
+                                <state key="normal" title="나와의 채팅" image="profileTalkImg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwh-aS-jim">
+                                <rect key="frame" x="110" y="688" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EWS-Di-GmY"/>
+                                    <constraint firstAttribute="width" constant="80" id="ZEw-mw-TRU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-45" maxX="-77" maxY="0.0"/>
+                                <state key="normal" title="프로필 편집" image="profileEditImg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yik-P4-9Sk">
+                                <rect key="frame" x="171.66666666666666" y="613" width="47" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="Pz9-Bh-enf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h6U-Ju-5gN"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
-                            <constraint firstItem="dXA-cP-55Z" firstAttribute="leading" secondItem="Iwh-aS-jim" secondAttribute="trailing" id="4Cw-4a-nBV"/>
+                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="dXA-cP-55Z" secondAttribute="bottom" constant="62" id="2dr-Gs-I7g"/>
+                            <constraint firstItem="dXA-cP-55Z" firstAttribute="leading" secondItem="Iwh-aS-jim" secondAttribute="trailing" id="4Pw-sr-kmy"/>
                             <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="ZVR-IM-weA" secondAttribute="bottom" constant="202" id="7xB-tz-5o2"/>
                             <constraint firstItem="ZVR-IM-weA" firstAttribute="centerX" secondItem="8Oy-oD-klc" secondAttribute="centerX" id="AJZ-3a-cny"/>
-                            <constraint firstItem="dXA-cP-55Z" firstAttribute="leading" secondItem="Iwh-aS-jim" secondAttribute="trailing" constant="10" id="JEd-Ag-PVV"/>
-                            <constraint firstItem="kOH-Io-e7L" firstAttribute="leading" secondItem="h6U-Ju-5gN" secondAttribute="leading" constant="44" id="Jby-9o-rtl"/>
-                            <constraint firstItem="dXA-cP-55Z" firstAttribute="leading" secondItem="Iwh-aS-jim" secondAttribute="trailing" id="KoJ-m5-Bz4"/>
+                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="Iwh-aS-jim" secondAttribute="bottom" constant="62" id="DkC-oJ-kzs"/>
+                            <constraint firstItem="Iwh-aS-jim" firstAttribute="leading" secondItem="kOH-Io-e7L" secondAttribute="trailing" id="GoR-wk-WSv"/>
+                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="kOH-Io-e7L" secondAttribute="bottom" constant="62" id="LAo-Tp-vZ1"/>
                             <constraint firstItem="KyD-Qi-Gs6" firstAttribute="leading" secondItem="h6U-Ju-5gN" secondAttribute="leading" constant="18" id="Qeb-hl-KDn"/>
-                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="dXA-cP-55Z" secondAttribute="bottom" constant="47" id="R7f-4P-6Pg"/>
-                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="dXA-cP-55Z" secondAttribute="bottom" constant="47" id="Rgk-zq-snA"/>
                             <constraint firstItem="ZVR-IM-weA" firstAttribute="centerX" secondItem="8Oy-oD-klc" secondAttribute="centerX" id="RlJ-Vb-aWL"/>
-                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="kOH-Io-e7L" secondAttribute="bottom" constant="47" id="S5b-oC-PNd"/>
-                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="dXA-cP-55Z" secondAttribute="bottom" constant="47" id="TMT-zh-b6a"/>
-                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="Waa-Jf-Ke5" secondAttribute="bottom" constant="173" id="dk6-TE-6jS"/>
-                            <constraint firstItem="Waa-Jf-Ke5" firstAttribute="centerX" secondItem="8Oy-oD-klc" secondAttribute="centerX" id="fHu-6P-Wvf"/>
+                            <constraint firstItem="kOH-Io-e7L" firstAttribute="leading" secondItem="h6U-Ju-5gN" secondAttribute="leading" constant="30" id="blZ-vn-rzb"/>
                             <constraint firstItem="KyD-Qi-Gs6" firstAttribute="top" secondItem="h6U-Ju-5gN" secondAttribute="top" constant="58" id="gd5-4W-8kw"/>
-                            <constraint firstItem="Iwh-aS-jim" firstAttribute="leading" secondItem="h6U-Ju-5gN" secondAttribute="leading" constant="140" id="jC1-oC-QUC"/>
-                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="Iwh-aS-jim" secondAttribute="bottom" constant="47" id="pd8-7z-aNF"/>
-                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="trailing" secondItem="dXA-cP-55Z" secondAttribute="trailing" constant="20" id="rsG-nV-DlF"/>
-                            <constraint firstItem="h6U-Ju-5gN" firstAttribute="bottom" secondItem="Iwh-aS-jim" secondAttribute="bottom" constant="47" id="v19-Au-Ppb"/>
+                            <constraint firstItem="yik-P4-9Sk" firstAttribute="centerX" secondItem="8Oy-oD-klc" secondAttribute="centerX" id="jDA-i5-tgw"/>
+                            <constraint firstItem="dXA-cP-55Z" firstAttribute="top" secondItem="yik-P4-9Sk" secondAttribute="bottom" constant="54" id="ri2-8L-WQn"/>
                         </constraints>
                     </view>
                     <connections>
