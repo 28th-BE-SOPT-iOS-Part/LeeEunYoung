@@ -11,6 +11,7 @@ class Home1ViewController: UIViewController {
     
     static let identifier : String = "Home1ViewController"
 
+    @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var Home1TableView: UITableView!
     
     private var friendList : [FriendDataModel] = []
@@ -23,7 +24,7 @@ class Home1ViewController: UIViewController {
         Home1TableView.delegate=self
         Home1TableView.dataSource=self
         Home1TableView.separatorStyle = .none
-        // Do any additional setup after loading the view.
+         // Do any additional setup after loading the view.
     }
     
 
@@ -110,8 +111,19 @@ extension Home1ViewController : UITableViewDelegate
         
         self.present(cell, animated: true, completion: nil)
     }
+   
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
     
-  
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView(frame: CGRect(x: 0,
+                                              y: 0,
+                                              width: 50,
+                                              height: 80))
+        
+        return headerView
+    }
     
 }
 
