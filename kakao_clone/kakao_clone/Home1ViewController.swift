@@ -110,12 +110,7 @@ class Home1ViewController: UIViewController {
                 
             ])
         }
-
-
-    
 }
-
-
 
 
 extension Home1ViewController : UITableViewDelegate
@@ -165,5 +160,15 @@ extension Home1ViewController : UITableViewDataSource
         return serviceCell
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action1 = UIContextualAction(style: .normal, title: "차단", handler: {action,view,completionHalder in completionHalder(true)})
+        action1.backgroundColor = .systemRed
+        
+        let action2 = UIContextualAction(style: .normal, title: "숨김", handler: {action,view,completionHalder in completionHalder(true)})
+        action2.backgroundColor = .systemGray
+        
+        
+        return UISwipeActionsConfiguration(actions: [action1,action2])
+    }
 }
 
