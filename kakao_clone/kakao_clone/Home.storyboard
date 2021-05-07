@@ -50,6 +50,17 @@
                                             <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeE-rg-eNH">
+                                            <rect key="frame" x="379" y="15" width="19" height="19"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="19" id="jTe-JX-PvS"/>
+                                                <constraint firstAttribute="height" constant="19" id="kUR-Qx-R4w"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="settingIcon"/>
+                                            <connections>
+                                                <action selector="alertAction:" destination="c6I-EA-boh" eventType="touchUpInside" id="aHU-ml-Xgh"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
@@ -57,8 +68,10 @@
                                         <constraint firstItem="8Lq-G6-jxp" firstAttribute="leading" secondItem="F3V-Uq-MkU" secondAttribute="trailing" constant="11" id="BHx-Fc-yEB"/>
                                         <constraint firstItem="F3V-Uq-MkU" firstAttribute="leading" secondItem="WhG-Ze-yxA" secondAttribute="leading" constant="14" id="FtX-H9-rvR"/>
                                         <constraint firstItem="3zg-5P-OjF" firstAttribute="leading" secondItem="F3V-Uq-MkU" secondAttribute="trailing" constant="6" id="M3e-2q-0ra"/>
+                                        <constraint firstItem="PeE-rg-eNH" firstAttribute="top" secondItem="WhG-Ze-yxA" secondAttribute="top" constant="15" id="S3b-Sd-m0t"/>
                                         <constraint firstItem="F3V-Uq-MkU" firstAttribute="top" secondItem="WhG-Ze-yxA" secondAttribute="top" constant="5" id="nWU-ac-L6q"/>
                                         <constraint firstItem="8Lq-G6-jxp" firstAttribute="top" secondItem="3zg-5P-OjF" secondAttribute="bottom" constant="5" id="nym-YP-ucT"/>
+                                        <constraint firstAttribute="trailing" secondItem="PeE-rg-eNH" secondAttribute="trailing" constant="16" id="xKp-Ul-ThN"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
@@ -282,6 +295,7 @@
         <image name="profileEditImg" width="19.5" height="21.5"/>
         <image name="profileStoryImg" width="20.5" height="23.5"/>
         <image name="profileTalkImg" width="20.5" height="19.5"/>
+        <image name="settingIcon" width="19" height="19"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -9,6 +9,28 @@ import UIKit
 
 class Home1ViewController: UIViewController {
     
+    @IBAction func alertAction(_ sender: Any) {
+        showAlert(style: .actionSheet)
+    }
+    
+    func showAlert(style:UIAlertController.Style){
+        
+        let alert=UIAlertController(title: nil, message: nil, preferredStyle: style)
+        
+        let setting1=UIAlertAction(title: "편집", style: .default, handler: nil)
+        let setting2=UIAlertAction(title: "친구관리", style: .default, handler: nil)
+        let setting3=UIAlertAction(title: "전체설정", style: .default, handler: nil)
+        let setting4=UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        
+        alert.addAction(setting1)
+        alert.addAction(setting2)
+        alert.addAction(setting3)
+        alert.addAction(setting4)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     static let identifier : String = "Home1ViewController"
 
     @IBOutlet weak var firstView: UIView!
@@ -93,6 +115,9 @@ class Home1ViewController: UIViewController {
     
 }
 
+
+
+
 extension Home1ViewController : UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -117,10 +142,7 @@ extension Home1ViewController : UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: CGRect(x: 0,
-                                              y: 0,
-                                              width: 50,
-                                              height: 80))
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 80))
         
         return headerView
     }
