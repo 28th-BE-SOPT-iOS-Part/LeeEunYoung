@@ -14,7 +14,6 @@ class Home1ViewController: UIViewController {
     }
     
     func showAlert(style:UIAlertController.Style){
-        
         let alert=UIAlertController(title: nil, message: nil, preferredStyle: style)
         
         let setting1=UIAlertAction(title: "편집", style: .default, handler: nil)
@@ -49,7 +48,6 @@ class Home1ViewController: UIViewController {
          // Do any additional setup after loading the view.
     }
     
-
 
     @IBAction func ProfileButton(_ sender: Any) {
         guard let ProfileVC=self.storyboard?.instantiateViewController(identifier: "Home2ViewController")as? Home2ViewController else {return}
@@ -142,6 +140,7 @@ extension Home1ViewController : UITableViewDelegate
         return headerView
     }
     
+   
 }
 
 extension Home1ViewController : UITableViewDataSource
@@ -161,6 +160,7 @@ extension Home1ViewController : UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
         let action1 = UIContextualAction(style: .normal, title: "차단", handler: {action,view,completionHalder in completionHalder(true)})
         action1.backgroundColor = .systemRed
         
@@ -169,6 +169,6 @@ extension Home1ViewController : UITableViewDataSource
         
         
         return UISwipeActionsConfiguration(actions: [action1,action2])
-    }
+        }
+    
 }
-
