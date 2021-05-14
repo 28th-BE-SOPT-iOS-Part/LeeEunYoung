@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,6 +29,13 @@
 		715BADEA2632B93E00ED889B /* Home2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715BADE92632B93E00ED889B /* Home2ViewController.swift */; };
 		715BADF42632CC3A00ED889B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715BADF32632CC3A00ED889B /* TabBarViewController.swift */; };
 		717642F82631660900358DBF /* Home1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717642F72631660900358DBF /* Home1ViewController.swift */; };
+		717FA90E264EA22800289430 /* SignUpDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717FA90D264EA22800289430 /* SignUpDataModel.swift */; };
+		717FA910264EA24000289430 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717FA90F264EA24000289430 /* SignUpService.swift */; };
+		7181A487264938860070A01F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7181A486264938860070A01F /* APIConstants.swift */; };
+		7181A489264951DF0070A01F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7181A488264951DF0070A01F /* NetworkResult.swift */; };
+		7181A48B264952AF0070A01F /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7181A48A264952AF0070A01F /* LoginDataModel.swift */; };
+		7181A48D264954EC0070A01F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7181A48C264954EC0070A01F /* LoginService.swift */; };
+		870E696D205B05514E0A75E5 /* Pods_kakao_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D9F7111A585370D0ABCE88 /* Pods_kakao_clone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +63,15 @@
 		715BADE92632B93E00ED889B /* Home2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2ViewController.swift; sourceTree = "<group>"; };
 		715BADF32632CC3A00ED889B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		717642F72631660900358DBF /* Home1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home1ViewController.swift; sourceTree = "<group>"; };
+		717FA90D264EA22800289430 /* SignUpDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataModel.swift; sourceTree = "<group>"; };
+		717FA90F264EA24000289430 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		7181A486264938860070A01F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		7181A488264951DF0070A01F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		7181A48A264952AF0070A01F /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		7181A48C264954EC0070A01F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		77D9F7111A585370D0ABCE88 /* Pods_kakao_clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kakao_clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCECD372E3B38E9CED6D63CB /* Pods-kakao_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakao_clone.release.xcconfig"; path = "Target Support Files/Pods-kakao_clone/Pods-kakao_clone.release.xcconfig"; sourceTree = "<group>"; };
+		D38BA7D6659A34576CF5E200 /* Pods-kakao_clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kakao_clone.debug.xcconfig"; path = "Target Support Files/Pods-kakao_clone/Pods-kakao_clone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +79,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				870E696D205B05514E0A75E5 /* Pods_kakao_clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		128AC1906618AB7EE39787A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D38BA7D6659A34576CF5E200 /* Pods-kakao_clone.debug.xcconfig */,
+				CCECD372E3B38E9CED6D63CB /* Pods-kakao_clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		44A9B667E467CFC93495667A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77D9F7111A585370D0ABCE88 /* Pods_kakao_clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7126229D263063D4004B2175 = {
 			isa = PBXGroup;
 			children = (
 				712622A8263063D4004B2175 /* kakao_clone */,
 				712622A7263063D4004B2175 /* Products */,
+				128AC1906618AB7EE39787A3 /* Pods */,
+				44A9B667E467CFC93495667A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,8 +176,14 @@
 		7181A484264936FB0070A01F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7181A486264938860070A01F /* APIConstants.swift */,
+				7181A488264951DF0070A01F /* NetworkResult.swift */,
 				713E8279263D903C0064CB3C /* IconDataModel.swift */,
 				713E826D263D75870064CB3C /* FriendDataModel.swift */,
+				7181A48A264952AF0070A01F /* LoginDataModel.swift */,
+				7181A48C264954EC0070A01F /* LoginService.swift */,
+				717FA90D264EA22800289430 /* SignUpDataModel.swift */,
+				717FA90F264EA24000289430 /* SignUpService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 712622BA263063D5004B2175 /* Build configuration list for PBXNativeTarget "kakao_clone" */;
 			buildPhases = (
+				4C2B748877A0673C7D3185F4 /* [CP] Check Pods Manifest.lock */,
 				712622A2263063D4004B2175 /* Sources */,
 				712622A3263063D4004B2175 /* Frameworks */,
 				712622A4263063D4004B2175 /* Resources */,
+				DF7E83F2CE87F024A6527D2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,24 +269,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C2B748877A0673C7D3185F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kakao_clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7E83F2CE87F024A6527D2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kakao_clone/Pods-kakao_clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kakao_clone/Pods-kakao_clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kakao_clone/Pods-kakao_clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		712622A2263063D4004B2175 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				712622BF26306405004B2175 /* LoginViewController.swift in Sources */,
+				717FA910264EA24000289430 /* SignUpService.swift in Sources */,
 				712622C226306E2A004B2175 /* RegisterViewController.swift in Sources */,
 				713E826E263D75870064CB3C /* FriendDataModel.swift in Sources */,
 				712622AE263063D4004B2175 /* ViewController.swift in Sources */,
 				712622C5263072BB004B2175 /* CheckViewController.swift in Sources */,
 				713E8277263D86F50064CB3C /* SettingViewController.swift in Sources */,
 				713E8267263D46C90064CB3C /* Home1TableViewCell.swift in Sources */,
+				7181A489264951DF0070A01F /* NetworkResult.swift in Sources */,
 				715BADF42632CC3A00ED889B /* TabBarViewController.swift in Sources */,
 				712622AA263063D4004B2175 /* AppDelegate.swift in Sources */,
 				713E8274263D86DA0064CB3C /* SettingCollectionViewCell.swift in Sources */,
 				712622AC263063D4004B2175 /* SceneDelegate.swift in Sources */,
+				7181A48B264952AF0070A01F /* LoginDataModel.swift in Sources */,
+				7181A48D264954EC0070A01F /* LoginService.swift in Sources */,
+				7181A487264938860070A01F /* APIConstants.swift in Sources */,
 				715BADEA2632B93E00ED889B /* Home2ViewController.swift in Sources */,
 				717642F82631660900358DBF /* Home1ViewController.swift in Sources */,
+				717FA90E264EA22800289430 /* SignUpDataModel.swift in Sources */,
 				713E827A263D903C0064CB3C /* IconDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +479,7 @@
 		};
 		712622BB263063D5004B2175 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38BA7D6659A34576CF5E200 /* Pods-kakao_clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -409,6 +502,7 @@
 		};
 		712622BC263063D5004B2175 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCECD372E3B38E9CED6D63CB /* Pods-kakao_clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
