@@ -82,7 +82,7 @@ class ViewController: UIViewController {
 }
 ```
 📌Alamofire를 활용한 통신   
-💡서버 통신 결과를 처리하기 위한 파일(ex. NetworkResult.swift)
+💡서버 통신 결과를 처리하기 위한 파일(ex. NetworkResult.swift) : 네트워크 결과를 나누기 위해서 enum형으로 선언
 ```
 enum NetWorkResult<T>{
     case success(T) //서버 통신 성공한 경우
@@ -92,8 +92,9 @@ enum NetWorkResult<T>{
     case networkFail  //네트워크 연결이 실패한 경우
 }
 ```
-💡 데이터 모델을 만들기 위한 파일(ex. PersonDataModel.swift)  
-‼️ Codable 데이터 모델을 도와주는 사이트 : https://app.quicktype.io/
+💡 데이터 모델을 만들기 위한 파일(ex. PersonDataModel.swift) : 서버에서 받아온 JSON형태의 데이터를 담아내기 위해서 데이터 구조체를 만들고 codable을   
+
+⭐https://app.quicktype.io/
 ```
 struct PersonDataModel: Codable{
     let status: Int
