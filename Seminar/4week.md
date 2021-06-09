@@ -92,9 +92,26 @@ enum NetWorkResult<T>{
     case networkFail  //네트워크 연결이 실패한 경우
 }
 ```
-💡 데이터 모델을 만들기 위한 파일
+💡 데이터 모델을 만들기 위한 파일(ex. PersonDataModel.swift)  
 ‼️ Codable 데이터 모델을 도와주는 사이트 : https://app.quicktype.io/
+```
+struct PersonDataModel: Codable{
+    let status: Int
+    let success: Bool
+    let message: String
+    let data: Person
+}
 
+struct Person: Codable {
+    let name, profileMessage: String
+    
+    enum CodingKeys: String, CodingKey{
+        case name
+        case profileMessage = "profile_message"
+    }
+
+}
+```
 
 💡
 
