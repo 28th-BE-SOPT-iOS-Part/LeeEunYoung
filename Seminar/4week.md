@@ -1,5 +1,5 @@
 
-💡encode
+📌encode
 ```
 import UIKit
 import Alamofire
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 ```
 
 
-💡decode
+📌decode
 ```
 import UIKit
 import Alamofire
@@ -81,6 +81,25 @@ class ViewController: UIViewController {
     }
 }
 ```
-💡Alamofire를 활용한 통신
+📌Alamofire를 활용한 통신
+💡서버 통신 결과를 처리하기 위한 파일(NetworkResult.swift)
+```
+enum NetWorkResult<T>{
+    case success(T) //서버 통신 성공한 경우
+    case requestErr(T) //요청 에러가 발생한 경우
+    case pathErr  //경로 에러가 발생한 경우
+    case serverErr  //서버의 내부적 에러가 발생한 경우
+    case networkFail  //네트워크 연결이 실패한 
+}
+
+```
+
+
+
+
+💡
+
+
+💡
 
     
