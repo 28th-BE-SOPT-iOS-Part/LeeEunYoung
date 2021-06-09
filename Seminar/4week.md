@@ -81,23 +81,19 @@ class ViewController: UIViewController {
     }
 }
 ```
-📌Alamofire를 활용한 통신
-💡서버 통신 결과를 처리하기 위한 파일(NetworkResult.swift)
+📌Alamofire를 활용한 통신   
+💡서버 통신 결과를 처리하기 위한 파일(ex. NetworkResult.swift)
 ```
 enum NetWorkResult<T>{
     case success(T) //서버 통신 성공한 경우
     case requestErr(T) //요청 에러가 발생한 경우
     case pathErr  //경로 에러가 발생한 경우
     case serverErr  //서버의 내부적 에러가 발생한 경우
-    case networkFail  //네트워크 연결이 실패한 
+    case networkFail  //네트워크 연결이 실패한 경우
 }
-
 ```
-
-
-
-
-💡
+💡 데이터 모델을 만들기 위한 파일
+‼️ Codable 데이터 모델을 도와주는 사이트 : https://app.quicktype.io/
 
 
 💡
