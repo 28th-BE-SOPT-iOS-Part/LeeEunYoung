@@ -81,4 +81,6 @@ class ViewController: UIViewController {
     }
 }
 ```
+💡Alamofire를 활용한 통신
+
     
