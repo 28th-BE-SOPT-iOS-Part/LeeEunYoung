@@ -92,7 +92,7 @@ enum NetWorkResult<T>{
     case networkFail  //네트워크 연결이 실패한 경우
 }
 ```
-💡 데이터 모델을 만들기 위한 파일(ex. PersonDataModel.swift) : 서버에서 받아온 JSON형태의 데이터를 담아내기 위해서 데이터 구조체를 만들고 codable을   
+💡 데이터 모델을 만들기 위한 파일(ex. PersonDataModel.swift) : 서버에서 받아온 JSON형태의 데이터를 담아내기 위해서 데이터 구조체를 만들고 codable을 채택  
 
 ⭐https://app.quicktype.io/
 ```
@@ -114,6 +114,57 @@ struct Person: Codable {
 }
 ```
 
-💡
+💡 실직적인 네트워크 처리를 하는 파일(ex. GetPersonDataService.swift) : escaping closure를 활용해 결과값을 viewcontroller에 전달
+```
+struct GetPersonDataService
+{
+    static let shared = GetPersonDataService() //싱글턴 패턴을 선언 - 다른 뷰컨에서도 접근 가능함
+    
+    func getPersonInfo(completion : @escaping (NetworkResult<T>) -> Void)
+    {
+        let URL = "데이터를 받아오려는 주소 넣기"
+        let header : HTTPHeaders = ["Content-Type":"application/json"]
+    
+        let dataRequest = AF.request(URL, method: .get, encoding: JSONEncoding.default, headers:header)
+    
+        dataRequest.responseData { dataResponse in
+        
+        switch dataResponse.result {
+            case .success:
+                guard let statusCode = dataResponse.response?.statusCode else {return}
+                guard let value = dataResponse.value else {return}
+                let networkResult = self.judgeStatus(by: statusCode, value)
+                completion(networkResult)
+            case .failure: completion(.pathErr)
+        }
+        }
+    }
+
+    private func judgeStatus
+    
+    
+    
+    
+    
+    
+    
+    
+    private func isValidData
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+```
 
     
