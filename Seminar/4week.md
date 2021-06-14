@@ -31,12 +31,17 @@ struct CoffeeDataModel : Decodable{
     var drink : String
     var price : Int
     var orderer : String
+ ```
+ 
+ ```
     
     enum CodingKeys : String,CodingKey {
         case drink
         case price = "coffee_price"
         case orderer
     }
+    ```
+    ```
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -45,6 +50,37 @@ struct CoffeeDataModel : Decodable{
         orderer = (try? values.decode(String.self, forKey: .orderer)) ?? ""
     }
 }
+```
+👉 coffeeDataModel이라는 구조체 데이터 모델이 Decodable프로토콜을 채택하도록 한다(이 데이터 모델은 다른 데이터에서부터 이 데이터 모델로 디코딩이 가하다는 뜻)
+```
+class ViewController: UIViewController {
+
+let dummyData = """
+    {
+     "drink" : "아메리카노",
+     "coffee_price" : 1000,
+     "orderer" : "은영"
+    }
+""".data(using: .utf8)!
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+   
+    let jsonDecoder = JSONDecoder()
+    
+    do{
+        let order = try jsonDecoder.decode(CoffeeDataModel.self, from: dummyData)
+        print("디코더성공")
+        print(order)
+    }catch{
+        print(error)
+    }
+
+	}
+}
+```
+👉 원래는 서버에서 받은 JSON형식의 데이터를 사용하지만 이번에는 따옴표 3개를 작성하여 여러줄의 문자열을 작성하여 JSON형태로 만들어서 사용함(let dummyData) / JSONDecoder를 하나 선언함(let jsonDecoder = JSONDecoder()) / 그 다음 jsonDecoder에서 decode를 try한다(데이터 형과 어떤 데이터를 decode할지 넣음), try시에 에러가 발생한다면 catch로 가고 성공시에는 do{}의 다음 코드가 실행됨
 
 
 
@@ -62,8 +98,6 @@ struct CoffeeDataModel : Decodable{
 
 
 
-
-📌encode
 ```
 import UIKit
 import Alamofire
