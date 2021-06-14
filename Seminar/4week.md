@@ -1,3 +1,67 @@
+:star2: 서버와 클라이언트는 'HTTP 프로토콜' 방식으로 요청(Request)과 응답(Response)을 주고받음.
+
+​	:pushpin: 클라이언트가 서버에게 'HTTP 프로토콜' 방식으로 요청할때는 다음과 같은 여러가지 메서드가 있음, 서버는 클라이언트가 요청한 메서드 방식에 맞춰서 Response를 클라이언트에게 전달함
+
+​	:pushpin: GET: 데이터를 얻고 싶을 때
+
+​	:pushpin: POST: 내용을 전송할 때
+
+​	:pushpin: HEAD: 헤더 정보를 얻고 싶을 때 요청
+
+​	:pushpin: PUT: 내용을 갱신하고 싶을 때
+
+​	:pushpin: DELETE: 내용을 삭제하고 싶을 때
+
+:star2: 예를 들면, 클라이언트가 서버에게로 해당 url를 통해 get 요청을 하면, json형태로 데이터를 받는 네트워크 방식
+
+----------------------------------------------------
+
+:star2: Decode 방식 : 서버에서 받은 Json형식의 데이터를 원하는 데이터 모델로 변환하는 과정
+
+​	:pushpin: JSON을 decode 해서 데이터 모델로 만들려면 Decodable이라는 프로토콜을 채택해야 함
+
+​		```struct 데이터 모델 : Decodable ```
+
+​	:pushpin: JSON형식을 decode하는 예시 코드
+```
+import UIKit
+import Alamofire
+
+struct CoffeeDataModel : Decodable{
+    var drink : String
+    var price : Int
+    var orderer : String
+    
+    enum CodingKeys : String,CodingKey {
+        case drink
+        case price = "coffee_price"
+        case orderer
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        drink = (try? values.decode(String.self, forKey: .drink)) ?? ""
+        price = (try? values.decode(Int.self, forKey: .price)) ?? 0
+        orderer = (try? values.decode(String.self, forKey: .orderer)) ?? ""
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 📌encode
 ```
