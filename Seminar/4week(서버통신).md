@@ -143,13 +143,13 @@ class ViewController: UIViewController {
 -----------------------------------------------------------
 :star2: 라이브러리를 사용해 서버통신할때 준비해야 할 사항
 
-​	:point_right: 터미널로 가서
+ ​	 :point_right: 터미널로 가서
 
-​	:pushpin: sudo gem install cocoapods
+ ​	 :pushpin: sudo gem install cocoapods
 
-​	:pushpin: 프로젝트를 새로 만들고 터미널에서 프로젝트가 있는 경로까지 이동한 다음에
+ ​	 :pushpin: 프로젝트를 새로 만들고 터미널에서 프로젝트가 있는 경로까지 이동한 다음에
 
-​		```
+```
 
 ​         ls        //프로젝트 파일이름과 프로젝트 파일이름.xcodeproj가 나오면 정상임
 
@@ -161,7 +161,7 @@ class ViewController: UIViewController {
 
 ​		pod install.   //.xcworkspace, Podfile, Podfile.lock 등 파일이 나오면 성공임
 
-​      ```
+```
 
 
 ------------------------------------------------------------
