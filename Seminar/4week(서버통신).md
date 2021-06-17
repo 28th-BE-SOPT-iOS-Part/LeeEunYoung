@@ -151,15 +151,15 @@ class ViewController: UIViewController {
 
 ```
 
-​       ls        //프로젝트 파일이름과 프로젝트 파일이름.xcodeproj가 나오면 정상임
+​ls        //프로젝트 파일이름과 프로젝트 파일이름.xcodeproj가 나오면 정상임
 
-​	pod init.     //podfile이 생성됨
+​pod init.     //podfile이 생성됨
 
-​	vi Podfile 
+​vi Podfile 
 
-​	pod 'Alamofire','~>5.2'    //Podfile안에 입력함
+​pod 'Alamofire','~>5.2'    //Podfile안에 입력함
 
-​	pod install.   //.xcworkspace, Podfile, Podfile.lock 등 파일이 나오면 성공임
+​pod install.   //.xcworkspace, Podfile, Podfile.lock 등 파일이 나오면 성공임
 
 ```
 
