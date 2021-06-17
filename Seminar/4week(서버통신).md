@@ -141,17 +141,31 @@ class ViewController: UIViewController {
 
 ​		```
 -----------------------------------------------------------
+:star2: 라이브러리를 사용해 서버통신할때 준비해야 할 사항
+
+​	:point_right: 터미널로 가서
+
+​	:pushpin: sudo gem install cocoapods
+
+​	:pushpin: 프로젝트를 새로 만들고 터미널에서 프로젝트가 있는 경로까지 이동한 다음에
+
+​		```
+
+​         ls        //프로젝트 파일이름과 프로젝트 파일이름.xcodeproj가 나오면 정상임
+
+​		pod init.     //podfile이 생성됨
+
+​		vi Podfile 
+
+​		pod 'Alamofire','~>5.2'    //Podfile안에 입력함
+
+​		pod install.   //.xcworkspace, Podfile, Podfile.lock 등 파일이 나오면 성공임
+
+​      ```
+
+
+------------------------------------------------------------
 🌟 Alamofire를 활용한 통신 
-
-
-
-
-
-
-
-
-
-
   
 💡서버 통신 결과를 처리하기 위한 파일(ex. NetworkResult.swift) : 네트워크 결과를 나누기 위해서 enum형으로 선언
 ```
