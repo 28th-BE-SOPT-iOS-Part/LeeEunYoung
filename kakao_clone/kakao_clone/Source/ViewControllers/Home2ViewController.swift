@@ -8,14 +8,10 @@
 import UIKit
 
 class Home2ViewController: UIViewController {
-    
    
     @IBOutlet weak var iconImageView: UIImageView!
-    
     @IBOutlet weak var btn1: UIButton!
-    
     @IBOutlet weak var titleLabel: UILabel!
-   
     @IBOutlet weak var nameLabel: UILabel!
     
     var name : String = ""
@@ -25,6 +21,15 @@ class Home2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setStyle()
+        swipeRecognizer()
+    }
+    
+    @IBAction func ProfileClose(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func setStyle(){
         self.nameLabel.text=name
         self.titleLabel.text=state
         
@@ -34,14 +39,7 @@ class Home2ViewController: UIViewController {
             self.iconImageView.image=UIImage(named: "friendtabProfileImg")
         }
         
-        swipeRecognizer()
-        // Do any additional setup after loading the view.
     }
-    
-    @IBAction func ProfileClose(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     
     func swipeRecognizer() {
             let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture(_:)))
@@ -61,16 +59,5 @@ class Home2ViewController: UIViewController {
             }
         }
 
-
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

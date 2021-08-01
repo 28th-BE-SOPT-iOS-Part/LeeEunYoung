@@ -12,6 +12,25 @@ class Home1ViewController: UIViewController {
     @IBAction func alertAction(_ sender: Any) {
         showAlert(style: .actionSheet)
     }
+    static let identifier : String = "Home1ViewController"
+
+    @IBOutlet weak var firstView: UIView!
+    @IBOutlet weak var Home1TableView: UITableView!
+    
+    private var friendList : [FriendDataModel] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setFriendList()
+        setTableView()
+    }
+    
+    func setTableView(){
+        Home1TableView.delegate=self
+        Home1TableView.dataSource=self
+        Home1TableView.separatorStyle = .none
+    }
     
     func showAlert(style:UIAlertController.Style){
         let alert=UIAlertController(title: nil, message: nil, preferredStyle: style)
@@ -28,41 +47,13 @@ class Home1ViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
-    
-    
-    static let identifier : String = "Home1ViewController"
-
-    @IBOutlet weak var firstView: UIView!
-    @IBOutlet weak var Home1TableView: UITableView!
-    
-    private var friendList : [FriendDataModel] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setFriendList()
-        
-        Home1TableView.delegate=self
-        Home1TableView.dataSource=self
-        Home1TableView.separatorStyle = .none
-         // Do any additional setup after loading the view.
-    }
-    
 
     @IBAction func ProfileButton(_ sender: Any) {
         guard let ProfileVC=self.storyboard?.instantiateViewController(identifier: "Home2ViewController")as? Home2ViewController else {return}
         ProfileVC.modalPresentationStyle = .fullScreen
         self.present(ProfileVC, animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
     func setFriendList()
         {
             friendList.append(contentsOf: [
