@@ -4,9 +4,8 @@
 //
 //  Created by 이은영 on 2021/05/10.
 //
-
-import Foundation
 import Alamofire
+import Foundation
 
 struct LoginService{
     static let shared = LoginService()
@@ -44,7 +43,7 @@ struct LoginService{
     }
         
         private func judgeStatus(by statuscode: Int, _ data: Data) -> NetworkResult<Any>{
-            
+    
             let decoder = JSONDecoder()
             
             guard let decodeData = try? decoder.decode(SignUpDataModel.self,from: data)

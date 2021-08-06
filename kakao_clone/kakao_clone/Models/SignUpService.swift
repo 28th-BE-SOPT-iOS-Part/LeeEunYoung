@@ -4,9 +4,8 @@
 //
 //  Created by 이은영 on 2021/05/14.
 //
-
-import Foundation
 import Alamofire
+import Foundation
 
 struct SignUpService{
     static let shared = SignUpService()
